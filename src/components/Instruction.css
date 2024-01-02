@@ -1,0 +1,22 @@
+.instruction {
+    color: #4e2f2e;
+    padding: 50px 200px 0 300px;
+    text-align: center;
+    transition: 0.5s;
+    margin: 0 10% 10% 10%;
+    font-size: 25px;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .highlighName {
+    color: #a15f22;
+    font-size: 110%;
+  }
+
+  .keyFeaturesContainer {
+    text-align: justify;
+    margin: 20px;
+    position: relative;
+    bottom: 20px;
+  }

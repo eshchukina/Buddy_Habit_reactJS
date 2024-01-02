@@ -1,0 +1,17 @@
+html {
+    transition: 0.5s;
+      overflow: hidden;
+     
+  
+    }
+  
+
+
+body {
+    background-color:#d5c6b3;
+    min-height: 100vh;
+    transition: 0.5s;
+
+    overflow-x:scroll ;
+
+  }
