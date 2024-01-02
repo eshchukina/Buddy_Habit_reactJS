@@ -1,6 +1,6 @@
 
 The app is under construction.
-
+![screenshot 1](https://github.com/eshchukina/Buddy_Habit_reactJS/blob/main/public/Screenshot%202024-01-02%20201322.png)
 
 Welcome to the Buddy Habbit - your personalized tool for building positive habits and achieving your goals! This app is designed to empower you on your journey to self-improvement by helping you track and cultivate daily habits that contribute to a healthier and more productive lifestyle.
 
