@@ -1,70 +1,30 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The app is under construction.
+![screenshot 1](https://github.com/eshchukina/Buddy_Habit_reactJS/blob/main/public/Screenshot%202024-01-02%20201322.png)
 
-## Available Scripts
+Welcome to the Buddy Habbit - your personalized tool for building positive habits and achieving your goals! This app is designed to empower you on your journey to self-improvement by helping you track and cultivate daily habits that contribute to a healthier and more productive lifestyle.
 
-In the project directory, you can run:
 
-### `npm start`
+Key Features:
+Intuitive Habit Dashboard: Visualize your habits at a glance with our user-friendly dashboard. Track your progress effortlessly and stay motivated on your path to success.
+       
+Customizable Habit Categories: Tailor the app to your needs by custom habit categories. Whether it's fitness, mindfulness, or productivity, we've got you covered.
+       
+Daily Reminders: Set personalized reminders to keep you on track. Establish a routine and receive notifications to ensure you never miss a beat.
+      
+Insightful Statistics: Gain valuable insights into your habits with detailed statistics and charts. Identify trends, celebrate milestones, and adjust your strategy for continuous improvement.
+     
+Achievement Badges: Stay motivated with achievement badges! Earn rewards for consistency and challenge yourself to unlock new milestones.
+       
+Community Support: Connect with like-minded individuals in our community. Share your progress, exchange tips, and cheer each other on as you work towards your goals.
+      
+Sync Across Devices: Access your habit data anytime, anywhere. Seamlessly sync your progress across multiple devices to stay connected and in control.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+      
+How to Use:
+Create Your Habits: Start by adding habits you want to cultivate. Define the frequency, set achievable targets, and choose your preferred tracking metrics.
+       
+Track Your Progress: Log your daily activities effortlessly. Mark off completed habits and watch your progress accumulate over time.
+      
+Stay Inspired: Use the app's features to stay inspired and motivated. Celebrate your successes and learn from challenges to foster continuous personal growth.
+     
