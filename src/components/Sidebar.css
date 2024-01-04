@@ -112,13 +112,13 @@ aside {
   }
   
   img {
-    width: 150px;
+    width: 170px;
   }
   
   .logoWrapper {
     position: absolute;
     bottom: 0;
-    padding-left: 70px;
+    padding-left: 60px;
     text-align: center;
   }
   
@@ -128,4 +128,13 @@ aside {
   
   .settingContainer a {
     color: #8d6b5f;
+  }
+
+
+  .settingContainer a:hover {
+    color: #4e2f2e;
+    position: relative;
+    background-color: #d5c6b3;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }

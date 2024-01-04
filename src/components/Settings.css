@@ -1,3 +1,30 @@
-h2{
-    margin: 500px;
+h2 {
+}
+
+.settingContant {
+  margin: 200px 100px 0 400px;
+  color: #4c2e2e;
+}
+
+.buttonLoc {
+  font-size: 20px;
+  color: #d5c6b3;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #a15f22;
+  border: none;
+  cursor: pointer;
+}
+.buttonLoc:last-child {
+  padding: 20px 23px 20px;
+  margin: 0px 0px 0px 20px;
+}
+
+.buttonLoc:hover,
+.activeLan {
+  box-shadow: 0.8rem 0.8rem 1.4rem #e2d5cf, -0.2rem -0.2rem 1.8rem #8b6c5e;
+}
+
+p {
+    font-size: 20px;
 }

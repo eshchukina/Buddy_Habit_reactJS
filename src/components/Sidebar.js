@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,6 +15,8 @@ import {
 import "./Sidebar.css";
 
 const Sidebar = ({ setActiveSection }) => {
+  const { t } = useTranslation();
+
   const handleShare = () => {
     if (navigator.share) {
       navigator
@@ -53,37 +56,51 @@ const Sidebar = ({ setActiveSection }) => {
         <Link to="/settingsList">
 
           <FontAwesomeIcon icon={faGears} className="link-img" />
-          settings
+          {/* settings */}
+          {t('setting')}
+
         </Link>
       </div>
 
       <div className="link-sidebar">
       <Link to="/dashboard">
           <FontAwesomeIcon icon={faGrip} className="link-img" />
-          Habits
+          {/* Habits */}
+          {t('habits')}
+
         </Link>
 
         <div>
         <Link to="/instruction">
             <FontAwesomeIcon icon={faCircleInfo} className="link-img" />
-            Instruction
+            {/* Instruction */}
+            {t('instruction')}
+
           </Link>
 
           <a onClick={handleShare}>
             <FontAwesomeIcon icon={faShareNodes} className="link-img" />
-            Share
+            {/* Share */}
+            {t('share')}
+
+            
           </a>
 
           <a onClick={handleContactUs}>
             <FontAwesomeIcon icon={faEnvelope} className="link-img" />
-            Contact us
+            {/* Contact us */}
+            {t('contactUs')}
+
           </a>
           <a>
             <FontAwesomeIcon
               icon={faArrowRightFromBracket}
               className="link-img"
             />
-            Log out
+            {/* Log out */}
+            {t('logOut')}
+
+
           </a>
         </div>
 

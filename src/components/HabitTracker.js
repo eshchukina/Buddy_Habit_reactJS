@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Habit.css";
 import moment from "moment";
+import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -24,10 +25,12 @@ const HabitTracker = ({
   habits: propsHabits,
 }) => {
   const [habits, setHabits] = useState(propsHabits || []); 
-
   const [newHabit, setNewHabit] = useState("");
   const [reps, setReps] = useState("");
   const [selectedType, setSelectedType] = useState("");
+  const { t } = useTranslation();
+
+
   useEffect(() => {
     setHabits(propsHabits || []);
   }, [propsHabits, setHabits]);
@@ -96,17 +99,20 @@ const HabitTracker = ({
       <div className="habitText">
         <div className="inputContainer">
           <div>
-            <h1>new habit tracker:</h1>
+            <h1>
+            {t('newHabitTracker')}:
+            </h1>
             <input
               type="text"
-              placeholder="habit title"
+              placeholder={t('habitTitle')}
+
               value={newHabit}
               onChange={(e) => setNewHabit(e.target.value)}
             />
             <br />
             <input
               type="number"
-              placeholder="repetitions"
+              placeholder= {t('repetitions')}
               value={reps}
               onChange={(e) => setReps(e.target.value)}
             />
@@ -115,31 +121,40 @@ const HabitTracker = ({
               value={selectedType}
               onChange={(e) => setSelectedType(e.target.value)}
             >
-              <option value="">select type</option>
-              <option value="sport">
+              <option value=""> {t('category')}</option>
+              <option value= {t('sport')}>
                 <FontAwesomeIcon icon={faVolleyball} />
-                sport
+                {t('sport')}
               </option>
-              <option value="hobby">
+              <option value={t('hobby')}>
                 <FontAwesomeIcon icon={faIcons} />
-                hobby
+                  {t('hobby')}
               </option>
-              <option value="study">
-                <FontAwesomeIcon icon={faGraduationCap} /> study
+              <option value={t('study')}>
+                <FontAwesomeIcon icon={faGraduationCap} /> 
+                {t('study')}
+
               </option>
-              <option value="life">
-                <FontAwesomeIcon icon={faUser} /> life
+              <option value={t('life')}>
+                <FontAwesomeIcon icon={faUser} /> 
+                {t('life')}
+
               </option>
-              <option value="health">
-                <FontAwesomeIcon icon={faHeartPulse} /> health
+              <option value= {t('health')}
+>
+                <FontAwesomeIcon icon={faHeartPulse} /> 
+                                   {t('health')}
+
               </option>
-              <option value="thought">
-                <FontAwesomeIcon icon={faLightbulb} /> thought
+              <option value= {t('thought')}>
+                <FontAwesomeIcon icon={faLightbulb} />
+                {t('thought')} 
               </option>
             </select>
           </div>
           <button id="creator" onClick={addHabit}>
-            add
+         {t('add')} 
+
           </button>
         </div>
       </div>
@@ -156,21 +171,21 @@ const HabitTracker = ({
                   <div className="titleHabit">
                     
                     {!habit.finished}{" "}
-                    {habit.type === "sport" && (
-                      <FontAwesomeIcon icon={faVolleyball} />
+                    {habit.type === t("sport") && (
+                      <FontAwesomeIcon icon={faVolleyball} title={t("sport")} />
                     )}
-                    {habit.type === "hobby" && (
-                      <FontAwesomeIcon icon={faIcons} />
+                    {habit.type === t('hobby') && (
+                      <FontAwesomeIcon icon={faIcons} title={t("hobby")}/>
                     )}
-                    {habit.type === "study" && (
-                      <FontAwesomeIcon icon={faGraduationCap} />
+                    {habit.type === t("study") && (
+                      <FontAwesomeIcon icon={faGraduationCap} title={t("study")}/>
                     )}
-                    {habit.type === "life" && <FontAwesomeIcon icon={faUser} />}
-                    {habit.type === "health" && (
-                      <FontAwesomeIcon icon={faHeartPulse} />
+                    {habit.type === t("life") && <FontAwesomeIcon icon={faUser} title={t("life")}/>}
+                    {habit.type === t("health") && (
+                      <FontAwesomeIcon icon={faHeartPulse} title={t("health")} />
                     )}
-                    {habit.type === "thought" && (
-                      <FontAwesomeIcon icon={faLightbulb} />
+                    {habit.type === t("thought") && (
+                      <FontAwesomeIcon icon={faLightbulb} title={t("thought")} />
                     )}
                     <div className="title">{" "}{habit.title}</div>
                   </div>
@@ -178,7 +193,10 @@ const HabitTracker = ({
                     <div>
                       {habit.complete}/{habit.initial}{" "}
                       {/* {habit.startDate.format('L')}  */}
-                      end:{" "}
+                  
+                      {t('end')}:
+
+                      {" "}
                       {habit.startDate
                         .clone()
                         .add(habit.reps, "days")

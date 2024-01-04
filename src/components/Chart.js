@@ -2,8 +2,12 @@ import React, { useState, useEffect, useMemo, useCallback } from "react";
 import ReactApexChart from "react-apexcharts";
 import "./Chart.css";
 import "./Style.css";
+import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
+
 
 const Chart = ({ habits }) => {
+  const { t } = useTranslation(); // Use the useTranslation hook to get the t function
+
   const [labels, setLabels] = useState([]);
   const [options, setOptions] = useState({
     chart: {
@@ -78,20 +82,21 @@ const Chart = ({ habits }) => {
   const initializeHabitCounts = useCallback(() => {
     const habitCountByType = {};
     const possibleTypes = [
-      "sport",
-      "hobby",
-      "study",
-      "life",
-      "health",
-      "thought",
+      t('sport'),
+      t('hobby'),
+      t('study'),
+      t('life'),
+      t('health'),
+      t('thought'),
     ];
+
 
     possibleTypes.forEach((type) => {
       habitCountByType[type] = 0;
     });
 
     return habitCountByType;
-  }, []);
+  }, [t]);
 
   const habitCounts = useMemo(
     () => initializeHabitCounts(),
